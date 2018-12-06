@@ -4,11 +4,11 @@ public class TurnArray2 {
     public int[][] array;
     int[][]arrayTurned ;
 
-    TurnArray_2(int[][] arrayIn) {
+    TurnArray2(int[][] arrayIn) {
         array = arrayIn;
     }
     //todo why?
-    TurnArray_2() {
+    TurnArray2() {
         array =new int [0][0];
     }
 
@@ -45,29 +45,5 @@ public class TurnArray2 {
         array=arrayTurned;
     }
 }
-//todo CamelCase starting from capital letter
-class  go{
-    public static void main(String[] args) {
 
-        int[][] array = {{1, 2, 3, 4, 5, 6}, {1, 2, 3, 4, 5, 6}, {1, 2, 3, 4, 5, 6}, {1, 2, 3, 4, 5, 6}, {1, 2, 3, 4, 5, 6}, {1, 2, 3, 4, 5,6 }};
-
-
-        try {
-            //todo avoid underscores in names
-            TurnArray_2 g = new TurnArray_2(array);//Создаем обьект класа и сразу передаем параметры
-            g.turnLeftOnePosition();//Вызываем его метод
-            int[][] arrayNEW = g.array;
-
-            for (int i = 0; i < arrayNEW.length; i++) {
-                for (int j = 0; j < arrayNEW[i].length; j++) {
-                    System.out.print(arrayNEW[i][j] + "\t ");
-                }
-                System.out.println();
-            }
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.print("Пока вертит только симетричные масивы");
-
-        }
-    }
-}
 
