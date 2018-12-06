@@ -8,9 +8,9 @@ public class TurnArray2 {
         array = arrayIn;
     }
     //todo why?
-    //TurnArray2() {
-       // array =new int [0][0];
-   // }
+    TurnArray2() {
+       array =new int [0][0];
+   }
 
     public void turnRightOnePosition() throws ArrayIndexOutOfBoundsException {
         //todo why creating new array? use initial one and just swap elements
