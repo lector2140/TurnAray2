@@ -1,5 +1,5 @@
 //todo DO NOT use default package
-public class TurnArray_2 {
+public class TurnArray2 {
 
     public int[][] array;
     int[][]arrayTurned ;
