@@ -7,7 +7,7 @@ class  Go{
         try {
 
             TurnArray2 g = new TurnArray2(array);//Создаем обьект класа и сразу передаем параметры
-            g.turnLeftOnePosition();//Вызываем его метод
+            g.turnRightOnePosition();//Вызываем его метод
             int[][] arrayNEW = g.getArray();
 
             for (int i = 0; i < arrayNEW.length; i++) {
