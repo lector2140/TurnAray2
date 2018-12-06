@@ -1,18 +1,23 @@
 
 public class TurnArray2 {
 
-    public int[][] array;
+   private int[][] array;
     int[][]arrayTurned ;
 
     TurnArray2(int[][] arrayIn) {
          array = arrayIn;
         arrayTurned = new int[array.length][array.length];
     }
-    //todo why?
+    //todo why? Ответ- если в параметры обьекта не вставят масив то код выдаст ошибку без этой части
     TurnArray2() {
        array =new int [0][0];
+        arrayTurned = new int[array.length][array.length];
    }
-
+   //Добавил что бы онраничить доступ к переменой...инкапсуляция все такое.ВОПРОС надо ли?Или просто вернуть переменой
+    //public и не парится?
+   public int[][]  getArray(){
+        return array;
+    }
     public void turnRightOnePosition() throws ArrayIndexOutOfBoundsException {
 
         for (int i = 0; i < array.length; i++) {
