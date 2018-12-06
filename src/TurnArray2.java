@@ -1,4 +1,4 @@
-//todo DO NOT use default package
+
 public class TurnArray2 {
 
     public int[][] array;
