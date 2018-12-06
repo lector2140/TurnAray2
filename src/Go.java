@@ -6,7 +6,7 @@ class  Go{
 
         try {
 
-            TurnArray2 g = new TurnArray2();//Создаем обьект класа и сразу передаем параметры
+            TurnArray2 g = new TurnArray2(array);//Создаем обьект класа и сразу передаем параметры
             g.turnLeftOnePosition();//Вызываем его метод
             int[][] arrayNEW = g.getArray();
 
